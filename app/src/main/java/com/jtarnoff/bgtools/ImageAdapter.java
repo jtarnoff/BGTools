@@ -1,6 +1,8 @@
 package com.jtarnoff.bgtools;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -9,6 +11,7 @@ import android.widget.BaseAdapter;
  * Created by jtarnoff on 10/17/2015.
  */
 public class ImageAdapter extends BaseAdapter {
+    public static final String EXTRA_NUMBER_OF_DICE = "numDice";
     private Context mContext;
 
     public ImageAdapter(Context c) {
@@ -36,7 +39,7 @@ public class ImageAdapter extends BaseAdapter {
             //imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
             //imageView.setAdjustViewBounds(true);
             //imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            imageView.setPadding(8, 8, 8, 8);
+            imageView.setPadding(40, 40, 40, 40);
         } else {
             imageView = (SquareImageView) convertView;
         }
@@ -47,13 +50,7 @@ public class ImageAdapter extends BaseAdapter {
 
     // references to our images
     private Integer[] mThumbIds = {
-            R.drawable.dice_100, R.drawable.chip_100,
-            R.drawable.leaderboard_100, R.drawable.user_100,
-            R.drawable.dice_100, R.drawable.chip_100,
-            R.drawable.leaderboard_100, R.drawable.user_100,
-            R.drawable.dice_100, R.drawable.chip_100,
-            R.drawable.leaderboard_100, R.drawable.user_100,
-            R.drawable.dice_100, R.drawable.chip_100,
-            R.drawable.leaderboard_100, R.drawable.user_100
+            R.drawable.dice_100,
+            R.drawable.chip_100
     };
 }

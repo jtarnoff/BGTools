@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BGTools</string>
+    <string name="title_activity_test">Test Activity</string>
 </resources>

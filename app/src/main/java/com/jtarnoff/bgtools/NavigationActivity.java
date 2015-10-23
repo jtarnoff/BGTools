@@ -1,5 +1,6 @@
 package com.jtarnoff.bgtools;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,8 +21,18 @@ public class NavigationActivity extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(NavigationActivity.this, "" + position,
-                        Toast.LENGTH_SHORT).show();
+                switch (position) {
+                    case 0:
+                        Intent a = new Intent(v.getContext(), TestActivity.class)
+                                .putExtra("numDice", 1);
+                        v.getContext().startActivity(a);
+                        break;
+                    case 1:
+                        Intent b = new Intent(v.getContext(), TestActivity.class)
+                                .putExtra("numDice", 2);
+                        v.getContext().startActivity(b);
+                        break;
+                }
             }
         });
     }
