@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- Material - Amber - 600 -->
+    <color name="colorPrimary">#FFC107</color>
+    <!-- Material - Amber - 900 -->
+    <color name="colorPrimaryDark">#FF8F00</color>
+    <!-- Material - Teal - A200 -->
+    <color name="colorAccent">#64FFDA</color>
 </resources>

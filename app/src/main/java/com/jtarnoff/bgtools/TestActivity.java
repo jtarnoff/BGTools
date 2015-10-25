@@ -1,5 +1,6 @@
 package com.jtarnoff.bgtools;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.Toast;
 /**
  * Created by jtarnoff on 10/22/2015.
  */
-public class TestActivity extends AppCompatActivity {
+public class TestActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

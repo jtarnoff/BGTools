@@ -1,5 +1,6 @@
 package com.jtarnoff.bgtools;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-public class NavigationActivity extends AppCompatActivity {
+public class NavigationActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
