@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import com.jtarnoff.bgtools.sevenWonders.SevenWondersActivity;
+
 public class NavigationActivity extends Activity {
 
     @Override
@@ -29,8 +31,7 @@ public class NavigationActivity extends Activity {
                         v.getContext().startActivity(a);
                         break;
                     case 1:
-                        Intent b = new Intent(v.getContext(), TestActivity.class)
-                                .putExtra("numDice", 2);
+                        Intent b = new Intent(v.getContext(), SevenWondersActivity.class);
                         v.getContext().startActivity(b);
                         break;
                 }
