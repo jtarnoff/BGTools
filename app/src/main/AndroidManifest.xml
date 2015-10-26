@@ -24,7 +24,7 @@
                 android:value="com.jtarnoff.bgtools.NavigationActivity" />
         </activity>
         <activity
-            android:name="com.jtarnoff.bgtools.sevenWonders.SevenWondersActivity"
+            android:name=".SevenWondersActivity"
             android:label="@string/title_activity_test"
             android:parentActivityName="com.jtarnoff.bgtools.NavigationActivity" >
             <meta-data
